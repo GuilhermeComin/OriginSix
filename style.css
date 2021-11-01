@@ -14,6 +14,10 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 /*=========== VARIABLES ========================= */
 :root {
 
@@ -38,7 +42,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1 {
+.title {
   font: 700 1.875rem "Poppins", sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
@@ -107,14 +111,11 @@ h1 {
   width: 100%;
 }
 
-nav {
-  height: 4.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+main {
+  margin-top: calc(4.5rem + 2rem);
 }
 
+/*=========== LOGO ========================= */
 
 .logo {
   font: 700 1.3125rem "Poppins", sans-serif;
@@ -125,8 +126,73 @@ nav {
   color: var(--base-color);
 }
 
-main {
-  margin-top: 4.5rem;
+/*=========== NAVIGATION ========================= */
+
+nav {
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav ul li a {
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: var(--base-color);
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: var(--base-color);
+
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Mostrar Menu */
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+
+  background-color: var(--body-color);
+
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav.show .menu {
+  display: grid;
+  place-content: center;
+}
+
+nav.show ul.grid {
+  gap: 4rem;
+}
+
+nav.show ul li {
+  text-align: center;
 }
 
 /*=========== HOME ========================= */
@@ -178,18 +244,18 @@ main {
   margin-bottom: 2rem;
 }
 
-/*=========== SOBRE NÓS ========================= */
+/*=========== ABOUT ========================= */
 
-#sobreNos .container {
+#about .container {
   margin: 0;
 }
 
-#sobreNos .image {
+#about .image {
   position: relative;
   z-index: 1;
 }
 
-#sobreNos .image::before {
+#about .image::before {
   content: '';
   position: absolute;
   left: -7.54rem;
@@ -200,22 +266,22 @@ main {
   z-index: -1;
 }
 
-#sobreNos .sobreNos {
+#about .about {
   margin: 0 1.5rem;
   
 }
 
-#sobreNos .image {
+#about .image {
   margin-bottom: 2rem;
 }
 
-#sobreNos .image,
-#sobreNos .image::before {
+#about .image,
+#about .image::before {
   border-radius: 0.25rem;
 }
 
-#sobreNos h1 {
+#about h1 {
   margin-bottom: 1rem;
 }
 
-/*=========== SERVICOS ========================= */
+/*=========== SERVICES ========================= */
