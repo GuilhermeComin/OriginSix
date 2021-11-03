@@ -1,0 +1,19 @@
+// Abrir e fechar Menu
+const nav = document.querySelector('#header nav')
+const toggle = document.querySelectorAll('nav .toggle')
+
+for (var element of toggle) {
+    element.addEventListener('click', function(){
+        nav.classList.toggle('show')
+    })
+}
+
+// Fechar quando clicar no a
+
+const links = document.querySelectorAll('nav ul li a')
+
+for (var link of links) {
+    link.addEventListener('click', function(){
+        nav.classList.remove('show')
+    })
+}
