@@ -300,6 +300,10 @@ nav.show ul li {
 
 /*=========== ABOUT ========================= */
 
+#about {
+  background: white;
+}
+
 #about .container {
   margin: 0;
 }
@@ -358,17 +362,49 @@ nav.show ul li {
 
 /*=========== TESTIMONIALS ========================= */
 
-#testimonials .testimonials {
-  box-shadow: 0 0 12px rgba(0, 0, 0, .15);
+#testimonials {
+  background: white;
 }
 
 #testimonials .testimonial {
+  box-shadow: 0 0 12px rgba(0, 0, 0, .15);
+}
+
+#testimonials blockquote {
   padding: 2rem;
 }
 
-#testimonials p {
+#testimonials blockquote p {
   margin-bottom: 1.5rem;
+  text-indent: 1.875rem;
+  position: relative;
+  color: var(--title-color);
 }
+
+#testimonials blockquote p span {
+  color: var(--base-color);
+  font: 700 2.5rem serif;
+
+  position:absolute;
+
+  top: -0.25rem;
+  left: -1.75rem;
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+#testimonials cite img {
+  height: 1.5rem;
+  width: 1.5rem;
+  clip-path: circle();
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
 /*=========== CONTACT ========================= */
 
 #contact p {
