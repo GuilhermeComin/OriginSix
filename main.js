@@ -21,7 +21,7 @@ for (var link of links) {
 // Shadow after scroll on header
 
 const header = document.querySelector('#header')
-const navHeight = nav.offsetHeight
+const navHeight = header.offsetHeight
 
 window.addEventListener('scroll', function () {
   if (window.scrollY >= navHeight) {
