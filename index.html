@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OriginSix</title>
 
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <!-- STYLES -->
     <link rel="stylesheet" href="style.css" />
 
@@ -146,52 +154,58 @@
 
       <!-- TESTIMONIALS -->
       <section class="section" id="testimonials">
-        <div class="container grid">
+        <div class="container">
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
-          <div class="testimonials">
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Suscipit ab illo libero facere commodi
-                  expedita rerum numquam officiis magnam ea tenetur
-                </p>
-                <cite>
-                  <img src="assets/images/33.jpg" alt="Foto Wyatt Rodriguez" />
-                  Wyatt Rodriguez
-                </cite>
-              </blockquote>
-            </div>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Suscipit ab illo libero facere commodi
+                    expedita rerum numquam officiis magnam ea tenetur
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/images/33.jpg"
+                      alt="Foto Wyatt Rodriguez"
+                    />
+                    Wyatt Rodriguez
+                  </cite>
+                </blockquote>
+              </div>
 
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Suscipit ab illo libero facere commodi
-                  expedita rerum numquam officiis magnam ea tenetur
-                </p>
-                <cite>
-                  <img src="assets/images/71.jpg" alt="Foto Allison Turner" />
-                  Allison Turner
-                </cite>
-              </blockquote>
-            </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Suscipit ab illo libero facere commodi
+                    expedita rerum numquam officiis magnam ea tenetur
+                  </p>
+                  <cite>
+                    <img src="assets/images/71.jpg" alt="Foto Allison Turner" />
+                    Allison Turner
+                  </cite>
+                </blockquote>
+              </div>
 
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Suscipit ab illo libero facere commodi
-                  expedita rerum numquam officiis magnam ea tenetur
-                </p>
-                <cite>
-                  <img src="assets/images/81.jpg" alt="Foto Victor Allen" />
-                  Victor Allen
-                </cite>
-              </blockquote>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Suscipit ab illo libero facere commodi
+                    expedita rerum numquam officiis magnam ea tenetur
+                  </p>
+                  <cite>
+                    <img src="assets/images/81.jpg" alt="Foto Victor Allen" />
+                    Victor Allen
+                  </cite>
+                </blockquote>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
