@@ -366,12 +366,9 @@ nav.show ul li {
   background: white;
 }
 
-#testimonials .testimonial {
-  box-shadow: 0 0 12px rgba(0, 0, 0, .15);
-}
-
 #testimonials blockquote {
   padding: 2rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .15);
 }
 
 #testimonials blockquote p {
@@ -430,4 +427,19 @@ nav.show ul li {
   width: 14.75rem;
   height: 3.5rem;
   margin-bottom: 4rem;
+}
+
+/*=========== SWIPER ========================= */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--base-color);
 }

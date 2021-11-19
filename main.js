@@ -35,9 +35,10 @@ window.addEventListener('scroll', function () {
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    dynamicBullets: true
   }
 })
