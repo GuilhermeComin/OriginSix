@@ -5,6 +5,7 @@ const toggle = document.querySelectorAll('nav .toggle')
 for (var element of toggle) {
   element.addEventListener('click', function () {
     nav.classList.toggle('show')
+    evento
   })
 }
 
@@ -30,6 +31,13 @@ window.addEventListener('scroll', function () {
     header.classList.remove('scroll')
   }
 })
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= navHeight) {
+    header.classList.add('scroll')
+  } else {
+    header.classList.remove('scroll')
+  }
+})
 
 // SWIPER
 
@@ -39,6 +47,8 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   pagination: {
     el: '.swiper-pagination',
-    dynamicBullets: true
+    dynamicBullets: truetre
+    
+    fdew
   }
 })
