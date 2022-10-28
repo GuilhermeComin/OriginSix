@@ -10,7 +10,11 @@ a {
   text-decoration: none;
   color: pink;
 }
-
+.div-importante
+{
+  display: flex;
+  background: white;
+}
 img {
   width: 100%;
   height: auto;
